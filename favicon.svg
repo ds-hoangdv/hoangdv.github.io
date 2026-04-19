@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.4 -2.4 4.8 4.8">
+  
+  
+  <g stroke="oklch(0.18 0.01 250)" stroke-width="0.012" opacity="0.1" fill="none">
+    <line x1="-1.35" y1="-1.35" x2="1.35" y2="-1.35"></line>
+    <line x1="1.35" y1="-1.35" x2="1.35" y2="1.35"></line>
+    <line x1="1.35" y1="1.35" x2="-1.35" y2="1.35"></line>
+    <line x1="-1.35" y1="1.35" x2="-1.35" y2="-1.35"></line>
+  </g>
+  
+  <g fill="oklch(0.18 0.01 250)" opacity="0.35">
+    <circle cx="-1" cy="-1" r="0.06"></circle>
+    <circle cx="-0.5" cy="-1" r="0.06"></circle>
+    <circle cx="0" cy="-1" r="0.06"></circle>
+    <circle cx="0.5" cy="-1" r="0.06"></circle>
+    <circle cx="1" cy="-1" r="0.06"></circle>
+    <circle cx="-1" cy="1" r="0.06"></circle>
+    <circle cx="-0.5" cy="1" r="0.06"></circle>
+    <circle cx="0" cy="1" r="0.06"></circle>
+    <circle cx="0.5" cy="1" r="0.06"></circle>
+    <circle cx="1" cy="1" r="0.06"></circle>
+    <circle cx="-1" cy="-0.5" r="0.06"></circle>
+    <circle cx="1" cy="-0.5" r="0.06"></circle>
+    <circle cx="-1" cy="0" r="0.06"></circle>
+    <circle cx="1" cy="0" r="0.06"></circle>
+    <circle cx="-1" cy="0.5" r="0.06"></circle>
+    <circle cx="1" cy="0.5" r="0.06"></circle>
+  </g>
+  
+  <g stroke="oklch(0.55 0.14 240)" stroke-width="0.05" stroke-linecap="round" opacity="0.6">
+    <line x1="-0.5" y1="0" x2="0" y2="0"></line>
+    <line x1="0" y1="0" x2="0.5" y2="0"></line>
+    <line x1="0" y1="-0.5" x2="0" y2="0"></line>
+    <line x1="0" y1="0" x2="0" y2="0.5"></line>
+  </g>
+  
+  <g fill="oklch(0.55 0.14 240)">
+    <circle cx="0" cy="0" r="0.25" opacity="0.2"></circle>
+    <circle cx="0" cy="0" r="0.14"></circle>
+    <circle cx="-0.5" cy="0" r="0.1" opacity="0.85"></circle>
+    <circle cx="0.5" cy="0" r="0.1" opacity="0.85"></circle>
+    <circle cx="0" cy="-0.5" r="0.1" opacity="0.85"></circle>
+    <circle cx="0" cy="0.5" r="0.1" opacity="0.85"></circle>
+  </g>
+</svg>

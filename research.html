@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Research — Viet-Hoang Dong</title>
+<meta name="description" content="Research interests, publications and collaborators of Viet-Hoang Dong."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+<script src="assets/js/dvh-logo.js"></script>
+<script src="assets/js/main.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" data-dvh-logo data-size="28" data-gridn="3" data-cluster="0.9" data-speed="0.7" data-parallax="false"></span>Dong Viet Hoang<span class="dot">.</span></a>
+    <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html">CV</a>
+      <a href="blog.html">Blog</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="container">
+
+  <section class="research-hero">
+    <span class="eyebrow">Research</span>
+    <h1>Making recommenders tell the truth.</h1>
+    <p class="muted" style="font-size:1.1rem;max-width:68ch">
+      Recommender systems decide, quietly, what billions of people see each day. I study how to make them faithful to what users actually want — not just to whatever maximises click-through — and how modern language models can help align those two goals.
+    </p>
+  </section>
+
+  <section>
+    <div class="triad-wrap">
+      <svg class="triad" viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" aria-label="A triangle of user, item and review nodes, all mutually connected.">
+        <g class="edges">
+          <line class="edge" data-pair="user item"   x1="110" y1="220" x2="370" y2="220"/>
+          <line class="edge" data-pair="user review" x1="110" y1="220" x2="240" y2="70"/>
+          <line class="edge" data-pair="item review" x1="370" y1="220" x2="240" y2="70"/>
+        </g>
+        <g class="nodes">
+          <g class="node" data-id="user"   tabindex="0">
+            <circle cx="110" cy="220" r="42"/>
+            <text x="110" y="220">User</text>
+          </g>
+          <g class="node" data-id="item"   tabindex="0">
+            <circle cx="370" cy="220" r="42"/>
+            <text x="370" y="220">Item</text>
+          </g>
+          <g class="node" data-id="review" tabindex="0">
+            <circle cx="240" cy="70"  r="42"/>
+            <text x="240" y="70">Review</text>
+          </g>
+        </g>
+      </svg>
+      <div>
+        <h3>The triad my WSDM'25 paper aligns.</h3>
+        <p>My recent work treats <strong>user</strong>, <strong>item</strong> and <strong>review</strong> representations as three points in a shared embedding space — and asks the model to pull them together through a contrastive objective.</p>
+        <p>Hover any node to see which edges light up: every pair is a loss term the model tries to satisfy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Research topics</h2></div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="meta">Research topic 01</div>
+        <h3>Review-aware &amp; Contrastive Recommendation</h3>
+        <p>How can free-text reviews — the only place users actually say <em>why</em> they liked something — drive a recommender? I design contrastive objectives that align user, item and review representations so that language is a signal, not garnish.</p>
+      </div>
+      <div class="card">
+        <div class="meta">Research topic 02</div>
+        <h3>LLMs for Recommendation &amp; IR</h3>
+        <p>Large language models are tempting black boxes for ranking. I'm interested in where they genuinely add value (reasoning over sparse interactions, cold-start, explanation) versus where they just add cost and hallucination.</p>
+      </div>
+      <div class="card">
+        <div class="meta">Research topic 03</div>
+        <h3>Fairness &amp; Risks in Recommenders</h3>
+        <p>Who gets recommended, and who doesn't? I look at fairness measures for both users and items in implicit-feedback settings, and at the risks that popular algorithms quietly amplify.</p>
+      </div>
+      <div class="card">
+        <div class="meta">Research topic 04</div>
+        <h3>Text &amp; Data Mining</h3>
+        <p>Classification, clustering, named entity recognition, keyword extraction, intent analysis — the unglamorous plumbing that makes everything else work. I have a soft spot for Vietnamese NLP problems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="section-head">
+      <h2>Publications</h2>
+      <a href="https://scholar.google.com/citations?user=-yfJ7MgAAAAJ&hl=vi" target="_blank" rel="noopener">Google Scholar →</a>
+    </div>
+
+    <h3>2025</h3>
+    <ul class="pub-list">
+      <li>
+        <span class="pub-venue hot">WSDM 2025</span><span class="badge-new">New</span>
+        <div class="pub-title">A Contrastive Framework with User, Item and Review Alignment for Recommendation</div>
+        <div class="pub-authors"><span class="me">Hoang V. Dong</span>, Yuan Fang, Hady W. Lauw</div>
+        <p class="small muted" style="margin:.4rem 0 0">The 18th ACM International Conference on Web Search and Data Mining.</p>
+        <div class="pub-links">
+          <a href="#">Paper</a><a href="#">Code</a><a href="#">BibTeX</a>
+        </div>
+      </li>
+    </ul>
+
+    <h3>2024</h3>
+    <ul class="pub-list">
+      <li>
+        <span class="pub-venue">KES 2024</span>
+        <div class="pub-title">Collaborative Fair-is-Better Filtering for Implicit Feedback</div>
+        <div class="pub-authors"><span class="me">Hoang V. Dong</span>, Huu-Quang Nguyen, Hoang D. Nguyen, Duc-Trong Le</div>
+        <p class="small muted" style="margin:.4rem 0 0">International Conference on Knowledge-Based and Intelligent Information &amp; Engineering Systems.</p>
+        <div class="pub-links">
+          <a href="#">Paper</a><a href="#">BibTeX</a>
+        </div>
+      </li>
+    </ul>
+
+    <p class="small muted">Author list marked with <span class="me" style="display:inline">underline</span> indicates me. Links will be updated as camera-ready versions and code are released.</p>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Advisors &amp; Collaborators</h2></div>
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="meta">Primary Advisor</div>
+        <h3><a href="https://www.yfang.site/">Yuan Fang</a></h3>
+        <p>Associate Professor, SMU School of Computing and Information Systems.</p>
+      </div>
+      <div class="card">
+        <div class="meta">Co-Advisor</div>
+        <h3><a href="https://www.hadylauw.com/">Hady W. Lauw</a></h3>
+        <p>Associate Professor, SMU School of Computing and Information Systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <details class="service" open>
+      <summary>
+        <h2>Achievements</h2>
+        <span class="hint">6 entries · <span class="caret">›</span></span>
+      </summary>
+      <div class="service-body">
+
+        <div class="service-group">
+          <h4>Awards</h4>
+          <div class="svc-row">
+            <span class="svc-tier q1">2025</span>
+            <span class="svc-role">National</span>
+            <span class="svc-name">Vietnam Digital Award 2025</span>
+          </div>
+          <div class="svc-row">
+            <span class="svc-tier q1">2025</span>
+            <span class="svc-role">Travel Grant</span>
+            <span class="svc-name">SIGIR Travel Award — WSDM 2025</span>
+          </div>
+          <div class="svc-row">
+            <span class="svc-tier">2020</span>
+            <span class="svc-role">Third Prize</span>
+            <span class="svc-name">UET-FIT Undergraduate Research Conference — <em>Intent analysis for E-commerce search</em></span>
+          </div>
+        </div>
+
+        <div class="service-group">
+          <h4>Competitions</h4>
+          <div class="svc-row">
+            <span class="svc-tier">2019</span>
+            <span class="svc-role">Rank 7</span>
+            <span class="svc-name">VLSP Shared Task 2019 — Hate Speech Detection</span>
+          </div>
+        </div>
+
+        <div class="service-group">
+          <h4>Scholarships</h4>
+          <div class="svc-row">
+            <span class="svc-tier q1">2022</span>
+            <span class="svc-role">PhD · Full</span>
+            <span class="svc-name">Singapore MOE Scholarship — PhD in Computer Science, SMU</span>
+          </div>
+          <div class="svc-row">
+            <span class="svc-tier">UET</span>
+            <span class="svc-role">Top 5%</span>
+            <span class="svc-name">University of Engineering and Technology — Academic Excellence</span>
+          </div>
+        </div>
+
+      </div>
+    </details>
+  </section>
+
+  <section>
+    <details class="service" open>
+      <summary>
+        <h2>Academic Service</h2>
+        <span class="hint">5 activities · <span class="caret">›</span></span>
+      </summary>
+      <div class="service-body">
+
+        <div class="service-group">
+          <h4>Conference — Organisation</h4>
+          <div class="svc-row">
+            <span class="svc-tier">A*</span>
+            <span class="svc-role">Organiser</span>
+            <span class="svc-name">The Web Conference (WWW)</span>
+          </div>
+          <div class="svc-row">
+            <span class="svc-tier">A*</span>
+            <span class="svc-role">Committee</span>
+            <span class="svc-name">SIGIR 2025</span>
+          </div>
+        </div>
+
+        <div class="service-group">
+          <h4>Conference — Reviewing</h4>
+          <div class="svc-row">
+            <span class="svc-tier">A*</span>
+            <span class="svc-role">Reviewer</span>
+            <span class="svc-name">KDD 2024</span>
+          </div>
+          <div class="svc-row">
+            <span class="svc-tier">A*</span>
+            <span class="svc-role">Reviewer</span>
+            <span class="svc-name">WSDM 2025</span>
+          </div>
+        </div>
+
+        <div class="service-group">
+          <h4>Journal — Reviewing</h4>
+          <div class="svc-row">
+            <span class="svc-tier q1">Q1</span>
+            <span class="svc-role">Reviewer</span>
+            <span class="svc-name">Tsinghua Science and Technology</span>
+          </div>
+        </div>
+
+      </div>
+    </details>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2026 Viet-Hoang Dong · Built with care, hosted on GitHub Pages.</div>
+    <div><a href="mailto:ds.hoangdv@gmail.com">ds.hoangdv@gmail.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

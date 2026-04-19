@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Projects — Viet-Hoang Dong</title>
+<meta name="description" content="Selected research, industry and venture projects by Viet-Hoang Dong."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+<script src="assets/js/dvh-logo.js"></script>
+<script src="assets/js/main.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" data-dvh-logo data-size="28" data-gridn="3" data-cluster="0.9" data-speed="0.7" data-parallax="false"></span>Dong Viet Hoang<span class="dot">.</span></a>
+    <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html">CV</a>
+      <a href="blog.html">Blog</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="container">
+
+  <section>
+    <span class="eyebrow">Projects</span>
+    <h1>Research, industry, ventures.</h1>
+    <p class="muted" style="max-width:68ch">
+      A sample of things I have built or shipped — from academic research prototypes to production systems at Vietnamese tech companies, to the two ventures I co-founded.
+    </p>
+  </section>
+
+  <!-- VENTURES -->
+  <section>
+    <div class="section-head"><h2>Ventures</h2></div>
+
+    <div class="venture">
+      <div class="logo"><img src="assets/img/Mavenpath.webp" alt="Mavenpath logo"/></div>
+      <div>
+        <div class="role">Founder · 2023 – present</div>
+        <h3>Mavenpath</h3>
+        <p>A live e-learning platform in Vietnam focused on <em>high-quality lecture delivery</em> — real-time classrooms, recording, and course management for instructors who care about craft, not just throughput.</p>
+        <div class="chips">
+          <span class="chip">EdTech</span><span class="chip">Live Streaming</span><span class="chip">Product</span><span class="chip">Vietnam</span>
+        </div>
+        <p style="margin-top:.8rem"><a href="https://mavenpath.edu.vn" target="_blank" rel="noopener">mavenpath.edu.vn →</a></p>
+      </div>
+    </div>
+
+    <div class="venture">
+      <div class="logo"><img src="assets/img/Haitrinhtauthuyen_logo.svg" alt="Hai Trinh Tau Thuyen logo"/></div>
+      <div>
+        <div class="role">Founder · Ongoing</div>
+        <h3>Hai Trinh Tau Thuyen</h3>
+        <p>A monitoring system for fishing vessels that digitises the storage of at-sea fishing logs — and, crucially, keeps working in environments with <strong>no internet access</strong>. Logs are captured offline, reconciled, and synced when the vessel returns to shore.</p>
+        <div class="chips">
+          <span class="chip">Offline-first</span><span class="chip">Maritime</span><span class="chip">IoT</span><span class="chip">GIS</span><span class="chip">Compliance</span>
+        </div>
+        <p style="margin-top:.8rem"><a href="https://haitrinhtauthuyen.vn/" target="_blank" rel="noopener">haitrinhtauthuyen.vn →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH PROJECTS -->
+  <section>
+    <div class="section-head"><h2>Research Projects</h2></div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="meta">PhD · SMU · Recommendation</div>
+        <h3>Contrastive User–Item–Review Alignment</h3>
+        <p>A contrastive framework that pulls user, item and review representations into a shared space, so that the <em>why</em> in a review improves ranking, not just decoration. Published at WSDM 2025.</p>
+        <div class="chips"><span class="chip">PyTorch</span><span class="chip">Contrastive</span><span class="chip">NLP</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">Research · Fairness</div>
+        <h3>Fair-is-Better Collaborative Filtering</h3>
+        <p>A collaborative-filtering formulation that treats fairness as a first-class signal for implicit-feedback recommendation. Published at KES 2024.</p>
+        <div class="chips"><span class="chip">Collaborative Filtering</span><span class="chip">Fairness</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">Lab · UET-VNU</div>
+        <h3>Fraud Detection in E-commerce</h3>
+        <p>A pipeline that automatically flags outlying transactions on an e-commerce platform, combining anomaly detection with behavioural features.</p>
+        <div class="chips"><span class="chip">Anomaly Detection</span><span class="chip">Features</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">Lab · UET-VNU</div>
+        <h3>Fuzzy &amp; Rough Set Experiments</h3>
+        <p>Implementation and empirical analysis of Fuzzy and Rough Set methods for data mining — the foundation that got me into recommendation.</p>
+        <div class="chips"><span class="chip">Data Mining</span><span class="chip">Theory</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY PROJECTS -->
+  <section>
+    <div class="section-head"><h2>Industry Projects</h2></div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="meta">Sendo JSC · 2019–2020</div>
+        <h3>User-Intent Identification in E-commerce Search</h3>
+        <p>Analyses real search queries on Sendo.vn to classify user intent and improve ranking quality. Thesis project; Third Prize at UET's undergraduate research conference.</p>
+        <div class="chips"><span class="chip">Bi-LSTM</span><span class="chip">CRF</span><span class="chip">FastText</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">Sendo JSC · 2019–2020</div>
+        <h3>Logo Detection for Counterfeit Prevention</h3>
+        <p>Detects famous brand logos in retailer-uploaded product images, reducing manual effort in counterfeit review on a large e-commerce platform.</p>
+        <div class="chips"><span class="chip">YOLOv3</span><span class="chip">InceptionV3</span><span class="chip">CV</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">AIPI JSC / OSP-Global</div>
+        <h3>Keyword Extraction for Vietnamese News</h3>
+        <p>A keyword-extraction service that surfaces the most important terms from Vietnamese articles for downstream tagging and retrieval.</p>
+        <div class="chips"><span class="chip">TF-IDF</span><span class="chip">TextRank</span><span class="chip">SingleRank</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">AIPI JSC / OSP-Global</div>
+        <h3>Named Entity Recognition for Vietnamese News</h3>
+        <p>NER over Vietnamese news content — people, locations, organisations — using Bi-LSTM+CRF with contextual string embeddings.</p>
+        <div class="chips"><span class="chip">Bi-LSTM</span><span class="chip">CRF</span><span class="chip">Embeddings</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">AIPI JSC / OSP-Global · NewsAi</div>
+        <h3>Relevant-News Content System</h3>
+        <p>Given an article, returns the top related articles from the corpus. Built around a high-performance KNN index for sub-second lookups.</p>
+        <div class="chips"><span class="chip">KNN</span><span class="chip">KD-Tree</span><span class="chip">TF-IDF</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">AIPI JSC / OSP-Global</div>
+        <h3>Articles Classification</h3>
+        <p>A labeller that matches raw Vietnamese articles to a predefined taxonomy, comparing Maximum Entropy, SVM and linear BoW baselines.</p>
+        <div class="chips"><span class="chip">MaxEnt</span><span class="chip">SVM</span><span class="chip">BoW</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">AIPI JSC · Big Data</div>
+        <h3>Customer Segmentation &amp; RFM</h3>
+        <p>Segments customers into homogeneous groups for differentiated engagement campaigns. EM + K-Means over RFM features.</p>
+        <div class="chips"><span class="chip">K-Means</span><span class="chip">EM</span><span class="chip">RFM</span></div>
+      </div>
+
+      <div class="card">
+        <div class="meta">VLSP 2019 · Competition</div>
+        <h3>Hate Speech Detection (Vietnamese)</h3>
+        <p>Ranked 7th at VLSP-Shared Task 2019, classifying Vietnamese user-generated text as clean, offensive or hateful.</p>
+        <div class="chips"><span class="chip">NLP</span><span class="chip">Classification</span><span class="chip">Vietnamese</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="callout">
+      <strong>Open-source links coming soon.</strong> As repos are cleaned up, the links above will point to live GitHub projects and demos.
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2026 Viet-Hoang Dong · Built with care, hosted on GitHub Pages.</div>
+    <div><a href="mailto:ds.hoangdv@gmail.com">ds.hoangdv@gmail.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
